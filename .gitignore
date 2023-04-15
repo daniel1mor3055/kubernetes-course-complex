@@ -1,0 +1,31 @@
+# Ignore all node_modules directories
+**/node_modules
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore temporary files, logs, and caches
+*.log
+*.tmp
+*.swp
+*.bak
+*.cache
+
+# Ignore build and distribution directories
+/dist
+/build
+
+# Ignore local development environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# Ignore IDE and editor files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore yarn.lock if you're not using Yarn
+yarn.lock
