@@ -21,7 +21,6 @@ jobs:
       - name: Build Docker images
         run: |
           docker build -t daniel1mor3055/multi-client ./client
-          docker build -t daniel1mor3055/multi-nginx ./nginx
           docker build -t daniel1mor3055/multi-server ./server
           docker build -t daniel1mor3055/multi-worker ./worker
 
@@ -31,6 +30,5 @@ jobs:
       - name: Push Docker images to Docker Hub
         run: |
           docker push daniel1mor3055/multi-client
-          docker push daniel1mor3055/multi-nginx
           docker push daniel1mor3055/multi-server
           docker push daniel1mor3055/multi-worker
