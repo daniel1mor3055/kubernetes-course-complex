@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: daniel1mor3055/multi-server
+          image: cygnetops/multi-server-pgfix-5-11
           ports:
             - containerPort: 5000
           env:
@@ -26,10 +26,10 @@ spec:
               value: postgres
             - name: PGHOST
               value: postgres-cluster-ip-service
-            - name: PGDATABASE
-              value: postgres
             - name: PGPORT
               value: '5432'
+            - name: PGDATABASE
+              value: postgres
             - name: PGPASSWORD
               valueFrom:
                 secretKeyRef:
